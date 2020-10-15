@@ -1,5 +1,5 @@
 use test
-mongoimport -d test -c data --type csv --headerline --file "C:\Users\hriti\OneDrive\Desktop\College\DSR Lab\bank-data.csv"
+mongoimport -d test -c data --type csv --headerline --file "home/saransh/Downloads/bank-data.csv"
 db.data.find()
 db.data.aggregate([
     { $group : { _id: null, sum: {$sum:"$age"} } }
